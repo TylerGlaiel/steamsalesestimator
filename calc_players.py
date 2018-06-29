@@ -24,7 +24,7 @@ def GetAchievementData(gameid):
     for x in data["achievementpercentages"]["achievements"]:
         pcent = x["percent"]
         ptext = str(x["percent"])
-        if pcent > 0 && pcent < 100:
+        if pcent > 0 and pcent < 100:
             percents.append(ptext)
         
     return percents
