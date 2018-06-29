@@ -17,7 +17,6 @@ gameid = str(args.gameid)
 
 def GetAchievementData(gameid):
     addr = "http://api.steampowered.com/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?"+gameid;
-    import urllib, json 
     with urllib.request.urlopen(addr) as url:
         data = json.loads(url.read().decode())
 
